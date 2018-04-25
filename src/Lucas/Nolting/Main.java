@@ -1,4 +1,5 @@
 package Lucas.Nolting;
+import FeeCalcs.*;
 
 public class Main {
 
