@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcfa62ac-18f7-420d-bf09-5b58f5e6e2d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Test/LostTicketInstanceTests.java" afterPath="$PROJECT_DIR$/Test/LostTicketInstanceTests.java" />
-      <change beforePath="$PROJECT_DIR$/Test/SpEventTests.java" afterPath="$PROJECT_DIR$/Test/SpEventTests.java" />
-      <change beforePath="$PROJECT_DIR$/src/FeeCalcs/LostTicketCalc/LostTicketInstance.java" afterPath="$PROJECT_DIR$/src/FeeCalcs/LostTicketCalc/LostTicketInstance.java" />
-      <change beforePath="$PROJECT_DIR$/src/FeeCalcs/SpEventCalc/SpEventInstance.java" afterPath="$PROJECT_DIR$/src/FeeCalcs/SpEventCalc/SpEventInstance.java" />
-      <change beforePath="$PROJECT_DIR$/src/Lucas/Nolting/Main.java" afterPath="$PROJECT_DIR$/src/Lucas/Nolting/Main.java" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,14 +48,27 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TimeMachine.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TimeMachine.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TimeMachine/TimeMachine.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
+                <state relative-caret-position="615">
                   <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="165">
+                    <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+                    <folding />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -158,6 +166,7 @@
         <option value="$PROJECT_DIR$/Test/LostTicketInstanceTests.java" />
         <option value="$PROJECT_DIR$/Test/SpEventTests.java" />
         <option value="$PROJECT_DIR$/src/TimeMachine/TimeMachine.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,45 +213,6 @@
               <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FeeCalcs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FeeCalcs" type="462c0819:PsiDirectoryNode" />
-              <item name="LostTicketCalc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FeeCalcs" type="462c0819:PsiDirectoryNode" />
-              <item name="MinMaxCalc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FeeCalcs" type="462c0819:PsiDirectoryNode" />
-              <item name="SpEventCalc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MenuCreator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnitFourChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TimeMachine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UnitFourChallenge" type="b2602c69:ProjectViewProjectNode" />
@@ -429,7 +399,7 @@
       <workItem from="1524810986600" duration="34000" />
       <workItem from="1524811263284" duration="63000" />
       <workItem from="1524857762200" duration="8849000" />
-      <workItem from="1524884246440" duration="11506000" />
+      <workItem from="1524884246440" duration="11801000" />
     </task>
     <servers />
   </component>
@@ -466,10 +436,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24433000" />
+    <option name="totallyTimeSpent" value="24728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1081" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -478,8 +449,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1755603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -715,16 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MenuCreator/InputSubmitParkingTicket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -889,11 +850,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TimeMachine/TimeMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="615">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
