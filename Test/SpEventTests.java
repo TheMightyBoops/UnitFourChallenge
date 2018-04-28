@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class SpEventTests {
 
-    SpEventInstance testInstance = SpEventInstance.getSpEventInstance();
+    SpEventInstance testInstance = SpEventInstance.getSpEventInstance(1);
 
     @Test
     public void SpEventFactoryTest() {
