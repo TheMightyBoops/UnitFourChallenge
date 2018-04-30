@@ -1,7 +1,6 @@
 package MenuCreator;
 
 
-
 /* --Conventions for adding menus--
  * [input|output][menuName]
  * ex. outputGarageReceipt
@@ -9,14 +8,14 @@ package MenuCreator;
 public class MenuFactory {
 
 
-    public static Menu createMenu(String desiredMenu) {
+    public static Menu createMenu(MenuChoice desiredMenu) {
 
         switch (desiredMenu) {
             // Inputs Go Here in Case
-            case "inputMainMenu":
+            case INPUT_MAIN_MENU:
                 return new InputMainMenu();
 
-            case "inputSubmitParkingTicket":
+            case INPUT_SUBMIT_PARKING_TICKET:
                 return new InputSubmitParkingTicket();
 
                 default: return new InputMainMenu();
@@ -24,12 +23,12 @@ public class MenuFactory {
     }
 
     // I split these because the outputs need special constructors
-    public static Menu createMenu(String desiredMenu, int vehicleId, double price) {
+    public static Menu createMenu(MenuChoice desiredMenu, int vehicleId, double price) {
         switch (desiredMenu) {
-            case "outputGarageSpecialEventReceipt":
+            case OUTPUT_SPECIAL_EVENT_RECEIPT:
                 return new OutputGarageSpecialEventReceipt(vehicleId,price);
 
-            case "outputLostTicketReceipt":
+            case OUTPUT_LOST_TICKET_RECEIPT:
                 return new OutputLostTicketReceipt(vehicleId, price);
             default: return new InputMainMenu();
         }
@@ -41,7 +40,7 @@ public class MenuFactory {
     }
 
     //End of Day Report
-    public static Menu createMenu(double[] pricesToDisplayAndTotal) {
-        return new OutputGarageClosedReport(pricesToDisplayAndTotal);
+    public static Menu createMenu(double[] pricesToDisplayAndTotal, int[] ticketsByType) {
+        return new OutputGarageClosedReport(pricesToDisplayAndTotal, ticketsByType);
     }
 }

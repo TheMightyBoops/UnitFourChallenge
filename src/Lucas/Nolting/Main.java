@@ -9,81 +9,119 @@ import TimeMachine.TimeMachine;
 import java.awt.*;
 import java.util.Date;
 import java.util.Scanner;
+import static MenuCreator.MenuChoice.*;
 
 public class Main {
+
     public static Scanner key = new Scanner(System.in);
+
     public static void main(String[] args) {
-	// write your code here
-        /*
-        double prices[] = {125.0, 123.0, 110.0};
+        TimeMachine time = new TimeMachine();
+        Main main = new Main();
+        int i=1;
+        double prices[] = {0,0,0};
+        int ticketsByType[] = {0,0,0};
+        boolean keepGoing = true;
+
+        while (keepGoing) {
+            boolean needsSecondMenu =
+                    main.virtualTicketMachineOne(i, prices, ticketsByType);
 
 
-        Menu menu = MenuFactory.createMenu("outputGarageSpecialEventReceipt");
-        System.out.println(menu.getMenu());
-        menu = MenuFactory.createMenu(prices);
-        System.out.println(menu.getMenu());
+            if(needsSecondMenu) {
+                main.virtualTicketMachineTwo(i, prices, ticketsByType, time);
+            }
 
-        TimeMachine someTimes = new TimeMachine();
-        String times[] = someTimes.getFormattedTimes();
-        for(int i =0; i < times.length; ++i) {
-            System.out.println(times[i]);
+            System.out.println("Keep going?(y,n)");
+            String input = key.nextLine();
+            if(input.toLowerCase().equals("n")) {
+                keepGoing = false;
+            }
+            ++i;
         }
+    }
 
-        System.out.println(someTimes.getHoursInBetweenTimes());*/
-
-
-        for(int i = 0; i < 5; i++) {
-
-            MinMaxFeeCalculator minCalc = null;
-            double prices[] = {0,0,0};
-            TimeMachine time = new TimeMachine();
-            int times = time.getHoursInBetweenTimes();
-            int menuChoice;
-            String tArray[] = time.getFormattedTimes();
-            String timeFrame = tArray[0] + " " + tArray[1];
+    private boolean virtualTicketMachineOne(int vehicleId, double[] prices,
+                                         int[] ticketsByType) {
 
 
-            Menu menu = MenuFactory.createMenu("");
-            System.out.println(menu.getMenu());
+        Menu menu = MenuFactory.createMenu(INPUT_MAIN_MENU);
+        System.out.println(menu.getMenu());
 
-            menuChoice = key.nextInt();
-            key.nextLine();
+        SpEventInstance sp = SpEventInstance.getSpEventInstance(vehicleId);
 
-            if(menuChoice == 1) {
-                minCalc = new MinMaxFeeCalculator(i, times);
 
-            }
 
-            else if(menuChoice ==2) {
-                SpEventInstance.getSpEventInstance(i);
-                menu = MenuFactory.createMenu("outputGarageSpecialEventReceipt", i,
-                        SpEventInstance.getSpecialEventFee());
-                System.out.println(menu.getMenu());
-            }
-            else if(menuChoice ==3) {
-                menu = MenuFactory.createMenu(prices);
-                System.out.println(menu.getMenu());
-                key.nextLine();
+
+        int userInput = key.nextInt();
+        key.nextLine();
+
+        switch(userInput) {
+            case 1:
                 break;
-            }
 
-            menu = MenuFactory.createMenu("inputSubmitParkingTicket");
-            System.out.println(menu.getMenu());
-            menuChoice = key.nextInt();
-            key.nextLine();
+            case 2:
+                menu = MenuFactory.createMenu(OUTPUT_SPECIAL_EVENT_RECEIPT,vehicleId,
+                        sp.getSpecialEventFee());
+                prices[1] += sp.getSpecialEventFee();
+                ++ticketsByType[1];
 
-            if(menuChoice== 1) {
-               menu = MenuFactory.createMenu(1,times, timeFrame, minCalc.getFee());
-               System.out.println(menu.getMenu());
-            }
-
-            else if(menuChoice==2) {
-                LostTicketInstance ticket = LostTicketInstance.getLostTicketInstance(i);
-                menu = MenuFactory.createMenu("outputLostTicketReceipt", i,
-                        ticket.getLostTicketFee());
                 System.out.println(menu.getMenu());
-            }
 
+                return false;
+
+            case 3:
+                if(prices[0] == 0 && prices[1] == 0 && prices[2] ==0) {
+                    this.virtualTicketMachineOne(vehicleId, prices,ticketsByType);
+                }
+
+                menu = MenuFactory.createMenu(prices, ticketsByType);
+                System.out.println(menu.getMenu());
+                return false;
+
+
+                default:
+                    this.virtualTicketMachineOne(vehicleId, prices,ticketsByType);
+
+        }
+        return true;
+    }
+
+    private void virtualTicketMachineTwo(int vehicleId, double[] prices,
+                                         int[] ticketsByType, TimeMachine time) {
+        Menu menu = MenuFactory.createMenu(INPUT_SUBMIT_PARKING_TICKET);
+        System.out.println(menu.getMenu());
+        int userInput = key.nextInt();
+        key.nextLine();
+
+
+        switch (userInput) {
+            case 1:
+                MinMaxFeeCalculator minCalc = new MinMaxFeeCalculator(vehicleId,
+                        time.getHoursInBetweenTimes());
+
+                String timeArray[] = time.getFormattedTimes();
+                String timeFrame = timeArray[0] + "-" + timeArray[1];
+
+                menu = MenuFactory.createMenu(vehicleId, time.getHoursInBetweenTimes(),
+                        timeFrame, minCalc.getFee());
+
+                prices[0] += minCalc.getFee();
+                ++ticketsByType[0];
+
+                System.out.println(menu.getMenu());
+                break;
+            case 2:
+                LostTicketInstance lt = LostTicketInstance.getLostTicketInstance(vehicleId);
+                menu = MenuFactory.createMenu(OUTPUT_LOST_TICKET_RECEIPT,vehicleId,
+                        lt.getLostTicketFee());
+                prices[2] += lt.getLostTicketFee();
+                ++ticketsByType[2];
+
+                System.out.println(menu.getMenu());
+                break;
+                default:
+                    this.virtualTicketMachineTwo(vehicleId, prices,ticketsByType, time);
         }
 
     }

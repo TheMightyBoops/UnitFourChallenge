@@ -16,8 +16,9 @@ public class OutputGarageClosedReport implements Menu {
 
     private double totalCollected=0;
 
-    OutputGarageClosedReport(double[] pricesToDisplayAndTotal) {
+    OutputGarageClosedReport(double[] pricesToDisplayAndTotal, int[] amountTixType) {
         this.prices = pricesToDisplayAndTotal;
+        this.amountOfTicketsByType = amountTixType;
         for(int i =0; i < prices.length; ++i) {
             totalCollected = prices[i] + totalCollected;
         }

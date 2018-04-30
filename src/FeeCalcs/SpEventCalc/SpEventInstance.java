@@ -18,7 +18,7 @@ public class SpEventInstance {
         return spEventInstance;
     }
 
-    public static double getSpecialEventFee() {
+    public double getSpecialEventFee() {
         return specialEventFee;
     }
 
