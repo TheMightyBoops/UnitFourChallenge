@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcfa62ac-18f7-420d-bf09-5b58f5e6e2d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Lucas/Nolting/Main.java" afterPath="$PROJECT_DIR$/src/Lucas/Nolting/Main.java" />
-    </list>
+    <list default="true" id="bcfa62ac-18f7-420d-bf09-5b58f5e6e2d7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -174,12 +172,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524690140656</updated>
       <workItem from="1524690159555" duration="250000" />
-      <workItem from="1524690984749" duration="181000" />
+      <workItem from="1524690984749" duration="258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431000" />
+    <option name="totallyTimeSpent" value="508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="598" y="163" width="1368" height="749" extended-state="6" />
