@@ -66,6 +66,10 @@ public class Main {
      * input based on the user, but also returns a flag to tell the main
      * method if the user will need to use the machine at the exit. So
      * the user isn't prompted if they do not have to be (eg SP event).
+     * The recursive call of this function happens if junk data is
+     * input by the user so it cant actually infect any of the methods
+     * and cause a crash. If the user does something wrong the function
+     * reoccurs.
      *
      * @param vehicleId A unique id for a vehicle to track customers
      * @param prices Array of prices for various types of parking.
@@ -120,7 +124,22 @@ public class Main {
         }
         return true;
     }
-
+    /**
+     * This method is a representation of a parking ticket machine at
+     * the exit of a parking garage.The recursive call of this function
+     * happens if junk data is input by the user so it cant actually infect
+     * any of the methods and cause a crash. If the user does something
+     * wrong the function reoccurs.
+     *
+     * @param vehicleId A unique id for a vehicle to track customers
+     * @param prices Array of prices for various types of parking.
+     * @param ticketsByType Amount of each type of parking ticket in any
+     * given session.
+     * @param time A generation of the amount of time that has passed on
+     * a ticket.
+     *
+     *
+     */
     private void virtualTicketMachineTwo(int vehicleId, double[] prices,
                                          int[] ticketsByType, TimeMachine time) {
         Menu menu = MenuFactory.createMenu(INPUT_SUBMIT_PARKING_TICKET);

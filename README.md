@@ -28,3 +28,8 @@ my main method calls. There's a lot of pieces to my system, but I think for the 
 and I may actually use the bones of my MenuCreator package in other things if I end up still writing 
 a lot of console applications in distributed java. Anyway that's really all there is going on in the 
 changes for today. Cheers!  
+
+4) May 9th, 2018 - I started my JavaDoc, it's okay, I've found some refactoring 
+that I should refactor and turn into constants, I don't know if I'm 
+going to do that just in interest of time. Sort of a boring inclusion,
+sorry. 
