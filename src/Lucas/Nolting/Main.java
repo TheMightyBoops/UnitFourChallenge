@@ -1,19 +1,37 @@
 package Lucas.Nolting;
+
 import FeeCalcs.LostTicketCalc.LostTicketInstance;
 import FeeCalcs.MinMaxCalc.MinMaxFeeCalculator;
 import FeeCalcs.SpEventCalc.SpEventInstance;
 import MenuCreator.*;
 import MenuCreator.Menu;
 import TimeMachine.TimeMachine;
-
-
 import java.util.Scanner;
 import static MenuCreator.MenuChoice.*;
+/**
+ * This Main class contains three methods: two to replicate a parking
+ * ticket machine on either end of a transaction (one at the entrance, and
+ * one for leaving. Main (the final method creates some variables to hold changes between
+ * states of the two machines.
+ *
+ * @version 1.0
+ * @author Lucas Nolting
+ */
+
 
 public class Main {
 
     public static Scanner key = new Scanner(System.in);
 
+
+
+    /**
+     * This method contains some fields to contain information between the states of the
+     * parking ticket machines. And also invokes the machines in a loop to allow the method to
+     * run until it is terminated by the user.
+     *
+     * @param args allows the program to accept arguments from the CLI when the method is invoked.
+     */
     public static void main(String[] args) {
         TimeMachine time = new TimeMachine();
         Main main = new Main();
@@ -41,6 +59,22 @@ public class Main {
         }
     }
 
+
+    /**
+     * This method is a representation of a parking ticket machine at
+     * the entrance of a parking garage.Not only can the method take
+     * input based on the user, but also returns a flag to tell the main
+     * method if the user will need to use the machine at the exit. So
+     * the user isn't prompted if they do not have to be (eg SP event).
+     *
+     * @param vehicleId A unique id for a vehicle to track customers
+     * @param prices Array of prices for various types of parking.
+     * @param ticketsByType Amount of each type of parking ticket in any
+     * given session.
+     *
+     * @return boolean representation of if the second ticket machine will
+     * require user input.
+     */
     private boolean virtualTicketMachineOne(int vehicleId, double[] prices,
                                          int[] ticketsByType) {
 
