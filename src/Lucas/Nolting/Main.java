@@ -6,8 +6,7 @@ import MenuCreator.*;
 import MenuCreator.Menu;
 import TimeMachine.TimeMachine;
 
-import java.awt.*;
-import java.util.Date;
+
 import java.util.Scanner;
 import static MenuCreator.MenuChoice.*;
 
@@ -29,6 +28,7 @@ public class Main {
 
 
             if(needsSecondMenu) {
+                time = new TimeMachine();
                 main.virtualTicketMachineTwo(i, prices, ticketsByType, time);
             }
 
