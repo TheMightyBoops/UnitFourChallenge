@@ -3,17 +3,31 @@ package TimeMachine;
 import java.util.Date;
 import java.util.Random;
 
+/**
+ * This class generates fake users for the system that spend
+ * specific times in the garage.
+ *
+ * @version 1.0
+ * @author Lucas Nolting
+ */
 public class TimeMachine {
     //private String FormattedTimes;
     private int timeOne;
     private int timeTwo;
 
+    /**
+     * Generates 2 numbers for the class to use.
+     */
     public TimeMachine() {
         Random rand = new Random();
         timeOne = rand.nextInt(24)+1;
         timeTwo = rand.nextInt(24)+1;
     }
 
+    /**
+     * @return Two generated times in the right order
+     * converted to a string.
+     */
     public String[] getFormattedTimes() {
         String times[] = new String[2];
 
@@ -43,6 +57,9 @@ public class TimeMachine {
         return times;
     }
 
+    /**
+     * @return returns the total hours in between generated times.
+     */
     public int getHoursInBetweenTimes() {
         if(timeOne > timeTwo) {
             return timeOne - timeTwo;

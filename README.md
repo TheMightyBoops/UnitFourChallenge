@@ -33,3 +33,7 @@ changes for today. Cheers!
 that I should refactor and turn into constants, I don't know if I'm 
 going to do that just in interest of time. Sort of a boring inclusion,
 sorry. 
+
+5) May 11th, 2018 - I'm in Platteville for my brothers graduation, so... good for him and whatnot.
+I think I'll just do some more JDoc, but if I have time to I'll document the other changes, but my 
+expectations aren't too high. 
