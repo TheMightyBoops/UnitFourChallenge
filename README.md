@@ -1,4 +1,9 @@
 # UnitFourChallenge
+Here is the patterns for each of the various packages: 
+  * MenuCreator - factory 
+  * FeeCalcs.LostTicketCalc & FeeCalcs,SpEventCal - singleton
+  * FeeCalcs.MinMaxCalc - strategy 
+
 Last project for advanced java. 
 
 I used a lot of packages in this project, and this is simply because I don't want to 
@@ -37,3 +42,9 @@ sorry.
 5) May 11th, 2018 - I'm in Platteville for my brothers graduation, so... good for him and whatnot.
 I think I'll just do some more JDoc, but if I have time to I'll document the other changes, but my 
 expectations aren't too high. 
+
+5) May 13th, 2018 - It's all done, well as done as it's going to get before I hand it in. I spent the whole time 
+basically writing unit tests. I wrote them so that in some cases a file handles an entire package, but that seems 
+to have worked out. I'm probably going to play video games now and prepare for my final week of classes. I think 
+I learned a lot this semester, but I'm starting to get burnt out, so... I'm Out and I'm going to go hand this in 
+right now. 
